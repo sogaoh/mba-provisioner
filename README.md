@@ -28,13 +28,13 @@ my PC (MacBook Air) provisioner
 
 ## Usage
 
-- That's all
+- That's all  
   `make`
 
-- Dry run
+- Dry run  
   `make test`
 
-- Only packages install/update
+- Only packages install/update  
   `make packages`
 
 - etc...
