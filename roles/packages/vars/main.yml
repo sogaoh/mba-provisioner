@@ -1,0 +1,7 @@
+homebrew_packages:
+  - { name: ghq }
+homebrew_cask_packages:
+  - { name: iterm2 }
+  - { name: google-chrome }
+  - { name: alfred }
+
