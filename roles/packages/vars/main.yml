@@ -4,6 +4,15 @@ homebrew_packages:
   - { name: vim, options: 'with-lua' }  
   - { name: zsh-completion }
   - { name: tmux }
+  - { name: rsync }
+  - { name: python }
+  - { name: git }
+  - { name: wget }
+  - { name: curl }
+  - { name: tree }
+  - { name: nkf }
+  - { name: jq }
+  - { name: pigz }    
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }

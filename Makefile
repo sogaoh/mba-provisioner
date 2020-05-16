@@ -1,6 +1,3 @@
-help:
-	cat Makefile
-
 all:
 	brew upgrade ansible
 	ansible-playbook mba-02.yml -i "localhost," -K
@@ -22,3 +19,6 @@ dot:
 ma:
 	ansible-playbook mackerel.yml -i "localhost," -e @variables.yaml --tags=mackerel -K 
 
+
+help:
+	cat Makefile
