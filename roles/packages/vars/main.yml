@@ -1,5 +1,7 @@
 homebrew_packages:
   - { name: ghq }
+  - { name: vim, options: 'with-lua' }  
+  - { name: zsh-completion }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }

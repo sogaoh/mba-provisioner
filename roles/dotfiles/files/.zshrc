@@ -10,6 +10,11 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+
 # Customize to your needs...
+
+# Iceberg iTerm2 Color
 export CLICOLOR=1
 
+# zsh-completion
+fpath=(path/to/zsh-completions/src $fpath)
