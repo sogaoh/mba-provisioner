@@ -38,6 +38,7 @@ my PC (MacBook Air) provisioner
   `make packages`
 
 - etc...
+  - `make ma`  # Mackerel Agent
   - `make dot`
   - `make zsh`
 

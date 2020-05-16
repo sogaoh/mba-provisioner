@@ -1,0 +1,31 @@
+---
+# brew
+- name: Install/Upgrade Homebrew packages
+  homebrew: >
+    name={{ item.name }}
+    state={{ item.state | default('latest') }}
+    install_options={{
+      item.install_options | default() | join(',')
+      if item.install_options is not string
+      else item.install_options
+    }}
+  with_items: "{{ homebrew_packages }}"
+  register: brew_result
+
+- name: Make directory for Brew Info
+  file: path=brew_info state=directory
+
+- name: Log Brew Info
+  shell: |
+    brew info {{ item | basename }} > brew_info/{{ item | basename }}
+  with_items: "{{ brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
+
+
+- name: Initialize mackerel-agent (Set API key)
+  shell: mackerel-agent init -apikey={{ mackerel_agent_apikey }} -conf /usr/local/etc/mackerel-agent.conf
+  ignore_errors: yes
+
+
+- name: Start mackerel-agent (Darwin)
+  command: /usr/local/bin/brew services start mackerel-agent
+
