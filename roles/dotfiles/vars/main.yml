@@ -1,0 +1,9 @@
+---
+dotfiles_name:
+  - .zlogin
+  - .zlogout
+  - .zpreztorc
+  - .zprofile
+  - .zshenv
+  - .zshrc
+
