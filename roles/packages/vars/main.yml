@@ -1,7 +1,9 @@
 homebrew_packages:
   - { name: ghq }
+  - { name: peco }
   - { name: vim, options: 'with-lua' }  
   - { name: zsh-completion }
+  - { name: tmux }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
