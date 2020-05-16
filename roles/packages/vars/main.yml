@@ -13,6 +13,11 @@ homebrew_packages:
   - { name: nkf }
   - { name: jq }
   - { name: pigz }    
+  - { name: exa }    
+  - { name: bat }    
+  - { name: fd }    
+  - { name: ripgrep }    
+  - { name: procs } 
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }

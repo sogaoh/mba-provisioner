@@ -61,3 +61,12 @@ export LESS='-F -g -i -M -R -S -w -X -z-4'
 if (( $#commands[(i)lesspipe(|.sh)] )); then
   export LESSOPEN="| /usr/bin/env $commands[(i)lesspipe(|.sh)] %s 2>&-"
 fi
+
+
+# exa
+alias els='exa --time-style=long-iso -g'
+alias ell='ls --git --time-style=long-iso -gl'
+alias ela='ls --git --time-style=long-iso -agl'
+alias el1='exa -1'
+
+
