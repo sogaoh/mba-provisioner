@@ -22,6 +22,17 @@ homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
   - { name: alfred }
+  - { name: docker }
+  - { name: firefox }
+  - { name: postman }
+  - { name: visual-studio-code }
+  - { name: intellij-idea } 
+  - { name: slack }
+  - { name: discord }
+  - { name: zoomus }
+  - { name: gimp }
+  - { name: eset-cyber-security-pro }
+  - { name: bitwarden }
 gem_packages:
 npm_packages:
 pip_packages:
