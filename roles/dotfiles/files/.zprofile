@@ -65,8 +65,8 @@ fi
 
 # exa
 alias els='exa --time-style=long-iso -g'
-alias ell='ls --git --time-style=long-iso -gl'
-alias ela='ls --git --time-style=long-iso -agl'
+alias ell='els --git -l'
+alias ela='els --git -al'
 alias el1='exa -1'
 
 
