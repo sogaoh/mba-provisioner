@@ -31,7 +31,7 @@ homebrew_cask_packages:
   - { name: discord }
   - { name: zoomus }
   - { name: gimp }
-  - { name: eset-cyber-security-pro }
+  #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
 gem_packages:
 npm_packages:
