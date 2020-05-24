@@ -41,17 +41,17 @@
   gem: name={{ item.name }} state={{ item.state|default('latest') }}
   with_items: "{{ gem_packages }}"
 
-## npm
-#- name: Check brew list node
-#  shell: brew list | grep node
-#  register: node_is_installed
-#  ignore_errors: True
-#  changed_when: False
+# npm
+- name: Check brew list node
+  shell: brew list | grep node
+  register: node_is_installed
+  ignore_errors: True
+  changed_when: False
 
-#- name: Install/Upgrade npm packages
-#  npm: name={{ item.name }} state={{ item.state|default('latest') }} global={{ item.global|default('yes') }}
-#  with_items: "{{ npm_packages }}"
-#  when: node_is_installed != ""
+- name: Install/Upgrade npm packages
+  npm: name={{ item.name }} state={{ item.state|default('latest') }} global={{ item.global|default('yes') }}
+  with_items: "{{ npm_packages }}"
+  when: node_is_installed != ""
 
 ## pip
 #- name: Checking whether pip command is installed

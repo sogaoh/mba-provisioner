@@ -20,6 +20,7 @@ homebrew_packages:
   - { name: procs }
   - { name: rbenv }
   - { name: ruby-build }
+  - { name: node }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -39,5 +40,5 @@ gem_packages:
   - { name: bundler }
   - { name: jekyll }
 npm_packages:
+  - { name: firebase-tools }
 pip_packages:
-
