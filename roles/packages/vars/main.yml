@@ -17,7 +17,9 @@ homebrew_packages:
   - { name: bat }    
   - { name: fd }    
   - { name: ripgrep }    
-  - { name: procs } 
+  - { name: procs }
+  - { name: rbenv }
+  - { name: ruby-build }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -34,6 +36,8 @@ homebrew_cask_packages:
   #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
 gem_packages:
+  - { name: bundler }
+  - { name: jekyll }
 npm_packages:
 pip_packages:
 
