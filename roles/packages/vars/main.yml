@@ -36,6 +36,7 @@ homebrew_cask_packages:
   - { name: gimp }
   #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
+  - { name: adobe-acrobat-reader}
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
