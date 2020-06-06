@@ -6,6 +6,7 @@ homebrew_packages:
   - { name: tmux }
   - { name: rsync }
   - { name: python }
+  - { name: pyenv }
   - { name: git }
   - { name: wget }
   - { name: curl }
@@ -49,3 +50,4 @@ gem_packages:
 npm_packages:
   - { name: firebase-tools }
 pip_packages:
+#  - { name: fabric }
