@@ -18,9 +18,13 @@ homebrew_packages:
   - { name: fd }    
   - { name: ripgrep }    
   - { name: procs }
+  - { name: tokei }
   - { name: rbenv }
   - { name: ruby-build }
   - { name: node }
+  - { name: ctop }
+  - { name: go }
+  - { name: tfenv }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
