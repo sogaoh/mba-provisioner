@@ -11,4 +11,5 @@
     - { role: packages, tags: packages }
     - { role: zsh, tags: zsh }
     - { role: dotfiles, tags: dotfiles }
+    - { role: python3, tags: python3 }
 

@@ -53,18 +53,15 @@
   with_items: "{{ npm_packages }}"
   when: node_is_installed != ""
 
-## pip
-#- name: Checking whether pip command is installed
-#  shell: type pip
-#  register: result
-#  ignore_errors: True
-#  changed_when: False
+# pip
+- name: Checking whether pip command is installed
+  shell: type pip
+  register: pip_is_installed
+  ignore_errors: True
+  changed_when: False
 
-#- name: Install pip command
-#  shell: easy_install pip
-#  when: result is failed
-
-#- name: Install/Upgrade pip packages
-#  pip: name={{ item.name }} state={{ item.state|default('latest') }}
-#  with_items: "{{ pip_packages }}"
+- name: Install/Upgrade pip packages
+  pip: name={{ item.name }} state={{ item.state|default('latest') }}
+  with_items: "{{ pip_packages }}"
+  when: pip_is_installed is not skipped and pip_is_installed.stdout != 'pip not found'
 

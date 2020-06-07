@@ -50,4 +50,4 @@ gem_packages:
 npm_packages:
   - { name: firebase-tools }
 pip_packages:
-#  - { name: fabric }
+  - { name: fabric }

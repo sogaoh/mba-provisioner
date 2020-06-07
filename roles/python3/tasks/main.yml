@@ -1,0 +1,23 @@
+---
+- name: Checking whether pyenv command is installed
+  shell: type pyenv
+  #ignore_errors: True
+  changed_when: False
+
+- name: Get latest python3 version
+  shell: pyenv install -l | grep -v '[a-zA-Z]' | grep -e '\s3\.?*' | tail -1 | xargs
+  register: pyenv_version
+  ignore_errors: yes
+  changed_when: False
+
+- name: Install latest python3 (pyenv)
+  shell: pyenv install {{ pyenv_version.stdout }}
+  when: pyenv_version is not skipped and pyenv_version.stdout != python_version
+
+- name: Reflect latest python3 whole (pyenv)
+  shell: pyenv global {{ pyenv_version.stdout }}
+  when: pyenv_version is not skipped and pyenv_version.stdout != python_version
+
+- name: Update Shims (pyenv)
+  shell: pyenv rehash
+  when: pyenv_version is not skipped and pyenv_version.stdout != python_version
