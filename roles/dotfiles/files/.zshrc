@@ -34,3 +34,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
+
+# gcloud
+export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
+export GOOGLE_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)

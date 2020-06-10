@@ -45,6 +45,7 @@ homebrew_cask_packages:
   #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
   - { name: adobe-acrobat-reader}
+  - { name: google-cloud-sdk }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
