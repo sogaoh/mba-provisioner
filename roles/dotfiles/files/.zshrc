@@ -38,3 +38,9 @@ fi
 # gcloud
 export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
 export GOOGLE_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
+
+# az(azure-cli)
+export ARM_SUBSCRIPTION_ID=$(security find-generic-password -s "azure subscription id" -w)
+export ARM_CLIENT_ID=$(security find-generic-password -s "azure client id" -w)
+export ARM_CLIENT_SECRET=$(security find-generic-password -s "azure client secret" -w)
+export ARM_TENANT_ID=$(security find-generic-password -s "azure tenant id" -w)

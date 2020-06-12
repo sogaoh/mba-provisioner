@@ -29,6 +29,7 @@ homebrew_packages:
   - { name: tfenv }
   - { name: terraformer }
   - { name: awscli }
+  - { name: azure-cli }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
