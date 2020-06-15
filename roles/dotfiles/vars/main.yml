@@ -7,4 +7,4 @@ dotfiles_name:
   - .zshenv
   - .zshrc
   - .vimrc
-
+  - .my.cnf
