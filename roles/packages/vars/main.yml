@@ -30,6 +30,8 @@ homebrew_packages:
   - { name: terraformer }
   - { name: awscli }
   - { name: azure-cli }
+  - { name: mysql }
+  - { name: noborus/tap/ov }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
