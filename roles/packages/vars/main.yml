@@ -32,6 +32,7 @@ homebrew_packages:
   - { name: azure-cli }
   - { name: mysql }
   - { name: noborus/tap/ov }
+  - { name: postgresql }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }

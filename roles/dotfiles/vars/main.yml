@@ -8,3 +8,4 @@ dotfiles_name:
   - .zshrc
   - .vimrc
   - .my.cnf
+  - .psqlrc

@@ -15,6 +15,9 @@ zsh:
 dot:
 	ansible-playbook mba-02.yml -i "localhost," --tags=dotfiles
 
+py3:
+	ansible-playbook mba-02.yml -i "localhost," --tags=python3
+
 
 ma:
 	ansible-playbook mackerel.yml -i "localhost," -e @variables.yaml --tags=mackerel -K 
