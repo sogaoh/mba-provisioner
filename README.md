@@ -25,6 +25,12 @@ my PC (MacBook Air) provisioner
   mackerel_agent_apikey: "<your_key>"
   ```
 
+- Create `/etc/hosts` symbolic link 
+  ```zsh
+  sudo mv /private/etc/hosts /private/etc/hosts.org
+  sudo ln -snf ~/.config/hosts /private/etc/hosts
+  ``` 
+
 
 ## Usage
 
@@ -38,7 +44,9 @@ my PC (MacBook Air) provisioner
   `make packages`
 
 - etc...
-  - `make ma`  # Mackerel Agent
+  - `make ma`    # Mackerel Agent
+  - `make hosts` # Add hosts 
+  - `make py3`   # Update Python3 via pyenv
   - `make dot`
   - `make zsh`
 
@@ -46,6 +54,7 @@ my PC (MacBook Air) provisioner
 ## Note 
 - Commands
   - rebuild zcompdump -> `rm -f ~/.zcompdump; compinit`
+  - Clear DNS cache -> `sudo killall -HUP mDNSResponder`
 
 
 ## References
@@ -58,5 +67,6 @@ my PC (MacBook Air) provisioner
 - https://github.com/sorin-ionescu/prezto
 - https://github.com/sindresorhus/pure/blob/master/pure.zsh <- https://github.com/sorin-ionescu/prezto/tree/master/modules/prompt/external
 - https://github.com/zsh-users/zsh-completions#manual-installation
+- [Mac の DNS キャッシュ をクリアするコマンド](https://blog.77jp.net/command-to-clear-dns-cache-on-mac)
 
 
