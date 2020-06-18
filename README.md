@@ -54,7 +54,7 @@ my PC (MacBook Air) provisioner
 ## Note 
 - Commands
   - rebuild zcompdump -> `rm -f ~/.zcompdump; compinit`
-  - Clear DNS cache -> `sudo killall -HUP mDNSResponder`
+  - clear DNS cache -> `sudo killall -HUP mDNSResponder`
 
 
 ## References
