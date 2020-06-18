@@ -19,6 +19,9 @@ py3:
 	ansible-playbook mba-02.yml -i "localhost," --tags=python3
 
 
+hosts:
+	ansible-playbook hosts.yml -i "localhost," --tags=hosts -K
+
 ma:
 	ansible-playbook mackerel.yml -i "localhost," -e @variables.yaml --tags=mackerel -K 
 

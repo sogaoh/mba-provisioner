@@ -1,0 +1,11 @@
+---
+- name: Append hosts
+  blockinfile:
+    dest: ~/.config/hosts
+    backup: yes
+    block: |
+      {{ item.content }}
+    marker: ""
+  with_items:
+    - "{{ minio }}"
+  changed_when: true
