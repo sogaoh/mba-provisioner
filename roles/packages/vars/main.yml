@@ -33,6 +33,7 @@ homebrew_packages:
   - { name: mysql }
   - { name: noborus/tap/ov }
   - { name: postgresql }
+  - { name: yarn }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -55,5 +56,6 @@ gem_packages:
   - { name: jekyll }
 npm_packages:
   - { name: firebase-tools }
+  - { name: now }
 pip_packages:
   - { name: fabric }
