@@ -47,4 +47,4 @@ export ARM_TENANT_ID=$(security find-generic-password -s "azure tenant id" -w)
 
 # notion-notes
 export NOTION_TOKEN=$(security find-generic-password -s "notion token" -w)
-export NOTES_INDEX_ID=$(security find-generic-password -s "notion notes index id" -w)
+export BLOG_INDEX_ID=$(security find-generic-password -s "notion notes index id" -w)
