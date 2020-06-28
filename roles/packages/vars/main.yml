@@ -34,6 +34,7 @@ homebrew_packages:
   - { name: noborus/tap/ov }
   - { name: postgresql }
   - { name: yarn }
+  - { name: graphviz }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
