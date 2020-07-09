@@ -59,5 +59,6 @@ gem_packages:
 npm_packages:
   - { name: firebase-tools }
   - { name: now }
+  - { name: heroku }
 pip_packages:
   - { name: fabric }
