@@ -52,6 +52,7 @@ homebrew_cask_packages:
   - { name: bitwarden }
   - { name: adobe-acrobat-reader}
   - { name: google-cloud-sdk }
+  - { name: java11 }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
