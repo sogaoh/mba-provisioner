@@ -43,7 +43,8 @@ homebrew_cask_packages:
   - { name: firefox }
   - { name: postman }
   - { name: visual-studio-code }
-  - { name: intellij-idea } 
+  - { name: intellij-idea }
+  - { name: jetbrains-toolbox }
   - { name: slack }
   - { name: discord }
   - { name: zoomus }
