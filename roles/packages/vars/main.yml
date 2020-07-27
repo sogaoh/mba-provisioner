@@ -35,6 +35,7 @@ homebrew_packages:
   - { name: postgresql }
   - { name: yarn }
   - { name: graphviz }
+  - { name: direnv }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }

@@ -91,3 +91,7 @@ function peco-cdr () {
 zle -N peco-cdr
 bindkey '^F' peco-cdr
 #bindkey '^D' peco-cdr
+
+
+# direnv
+eval "$(direnv hook zsh)"
