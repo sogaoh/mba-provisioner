@@ -16,7 +16,8 @@ homebrew_packages:
   - { name: pigz }    
   - { name: exa }    
   - { name: bat }    
-  - { name: fd }    
+  - { name: fd }
+  - { name: sd }
   - { name: ripgrep }    
   - { name: procs }
   - { name: tokei }
@@ -62,5 +63,6 @@ npm_packages:
   - { name: firebase-tools }
   - { name: now }
   - { name: heroku }
+  - { name: serverless }
 pip_packages:
   - { name: fabric }
