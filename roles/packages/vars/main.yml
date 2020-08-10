@@ -5,8 +5,8 @@ homebrew_packages:
   - { name: zsh-completion }
   - { name: tmux }
   - { name: rsync }
-  - { name: python }
-  - { name: pyenv }
+  - { name: python }      # replace to anyenv ?
+  - { name: pyenv }       # replace to anyenv ?
   - { name: git }
   - { name: wget }
   - { name: curl }
@@ -22,11 +22,11 @@ homebrew_packages:
   - { name: procs }
   - { name: tokei }
   - { name: extrawurst/tap/gitui }
-  - { name: rbenv }
-  - { name: ruby-build }
+#  - { name: rbenv }       # replaced to anyenv
+#  - { name: ruby-build }  # replaced to anyenv
   - { name: node }
   - { name: ctop }
-  - { name: go }
+  - { name: go }          # replace to anyenv ?
   - { name: tfenv }
   - { name: terraformer }
   - { name: awscli }
@@ -37,6 +37,15 @@ homebrew_packages:
   - { name: yarn }
   - { name: graphviz }
   - { name: direnv }
+  - { name: anyenv }  # for PHP, Ruby, Python?, Go?
+  - { name: composer }
+  - { name: openssl }
+  - { name: bzip2 }
+  - { name: libiconv }
+  - { name: icu4c }
+  - { name: tidy-html5 }
+  - { name: libzip }
+  - { name: libxml2 }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
