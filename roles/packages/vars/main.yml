@@ -24,7 +24,7 @@ homebrew_packages:
   - { name: extrawurst/tap/gitui }
 #  - { name: rbenv }       # replaced to anyenv
 #  - { name: ruby-build }  # replaced to anyenv
-  - { name: node }
+#  - { name: node }        # replaced to anyenv
   - { name: ctop }
   - { name: go }          # replace to anyenv ?
   - { name: tfenv }
@@ -47,6 +47,7 @@ homebrew_packages:
   - { name: libzip }
   - { name: libxml2 }
   - { name: kayac/tap/ecspresso }
+  - { name: jc }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -74,5 +75,6 @@ npm_packages:
   - { name: now }
   - { name: heroku }
   - { name: serverless }
+  - { name: zenn-cli }
 pip_packages:
   - { name: fabric }
