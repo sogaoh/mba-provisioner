@@ -48,6 +48,7 @@ homebrew_packages:
   - { name: libxml2 }
   - { name: kayac/tap/ecspresso }
   - { name: jc }
+  - { name: csvq }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -75,6 +76,6 @@ npm_packages:
   - { name: now }
   - { name: heroku }
   - { name: serverless }
-  - { name: zenn-cli }
+#  - { name: zenn-cli }  # use docker
 pip_packages:
   - { name: fabric }

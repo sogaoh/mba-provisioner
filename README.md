@@ -46,9 +46,9 @@ my PC (MacBook Air) provisioner
 - etc...
   - `make ma`    # Mackerel Agent
   - `make hosts` # Add hosts 
-  - `make py3`   # Update Python3 via pyenv
   - `make dot`
   - `make zsh`
+  - `make py3`   # Update Python3 via pyenv ... not work ...
 
 
 ## Note 
