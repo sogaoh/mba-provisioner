@@ -46,6 +46,8 @@ homebrew_packages:
   - { name: tidy-html5 }
   - { name: libzip }
   - { name: libxml2 }
+  - { name: zlib }
+  - { name: libedit }
   - { name: kayac/tap/ecspresso }
   - { name: jc }
   - { name: csvq }
