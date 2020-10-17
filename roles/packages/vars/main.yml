@@ -5,8 +5,8 @@ homebrew_packages:
   - { name: zsh-completion }
   - { name: tmux }
   - { name: rsync }
-  - { name: python }      # replace to anyenv ?
-  - { name: pyenv }       # replace to anyenv ?
+#  - { name: python }      # replace to anyenv
+#  - { name: pyenv }       # replace to anyenv
   - { name: git }
   - { name: wget }
   - { name: curl }
@@ -26,13 +26,14 @@ homebrew_packages:
 #  - { name: ruby-build }  # replaced to anyenv
 #  - { name: node }        # replaced to anyenv
   - { name: ctop }
-  - { name: go }          # replace to anyenv ?
+#  - { name: go }          # replace to anyenv (goenv)
   - { name: tfenv }
   - { name: terraformer }
   - { name: awscli }
   - { name: azure-cli }
   - { name: mysql }
   - { name: noborus/tap/ov }
+  - { name: noborus/tap/trdsql }
   - { name: postgresql }
   - { name: yarn }
   - { name: graphviz }
