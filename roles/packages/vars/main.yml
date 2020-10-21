@@ -22,6 +22,7 @@ homebrew_packages:
   - { name: procs }
   - { name: tokei }
   - { name: extrawurst/tap/gitui }
+  - { name: muesli/tap/duf }
 #  - { name: rbenv }       # replaced to anyenv
 #  - { name: ruby-build }  # replaced to anyenv
 #  - { name: node }        # replaced to anyenv
@@ -39,6 +40,7 @@ homebrew_packages:
   - { name: graphviz }
   - { name: direnv }
   - { name: anyenv }  # for PHP, Ruby, Python?, Go?
+  - { name: certbot }
   - { name: composer }
   - { name: openssl }
   - { name: bzip2 }
