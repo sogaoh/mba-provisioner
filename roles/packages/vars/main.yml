@@ -55,6 +55,7 @@ homebrew_packages:
   - { name: jc }
   - { name: csvq }
   - { name: hugo }
+  - { name: ffmpeg }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
