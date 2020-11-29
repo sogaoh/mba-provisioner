@@ -56,6 +56,7 @@ homebrew_packages:
   - { name: csvq }
   - { name: hugo }
   - { name: ffmpeg }
+  - { name: yq }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
@@ -72,7 +73,7 @@ homebrew_cask_packages:
   - { name: gimp }
   #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
-  - { name: adobe-acrobat-reader}
+  - { name: adobe-acrobat-reader }
   - { name: google-cloud-sdk }
   - { name: java11 }
 gem_packages:
@@ -86,3 +87,4 @@ npm_packages:
 #  - { name: zenn-cli }  # use docker
 pip_packages:
   - { name: fabric }
+  - { name: ansible-lint }
