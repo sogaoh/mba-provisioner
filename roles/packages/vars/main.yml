@@ -69,7 +69,7 @@ homebrew_cask_packages:
   - { name: jetbrains-toolbox }
   - { name: slack }
   - { name: discord }
-  - { name: zoomus }
+  - { name: zoom }
   - { name: gimp }
   #- { name: eset-cyber-security-pro }  # Unsupported..
   - { name: bitwarden }
