@@ -122,42 +122,42 @@ eval "$(direnv hook zsh)"
 # anyenv
 eval "$(anyenv init -)"
 
-# for build PHP 7.4, 7.3
-export PATH="/usr/local/opt/openssl/bin:$PATH"
-export PATH="/usr/local/opt/bzip2/bin:$PATH"
-export PATH="/usr/local/opt/libiconv/bin:$PATH"
-export PATH="/usr/local/opt/icu4c/bin:$PATH"
-export PATH="/usr/local/opt/tidy-html5/bin:$PATH"
-export PATH="/usr/local/opt/libzip/bin:$PATH"
-export PATH="/usr/local/opt/libxml2/bin:$PATH"
-
-export PHP_RPATHS="/usr/local/opt/openssl/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/bzip2/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/libiconv/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/icu4c/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/tidy-html5/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/libzip/lib:$PHP_RPATHS"
-export PHP_RPATHS="/usr/local/opt/libxml2/lib:$PHP_RPATHS"
-
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/bzip2/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/libiconv/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/tidy-html5/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/libzip/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-export PHP_BUILD_CONFIGURE_OPTS="\
-  --disable-fpm \
-  --disable-phpdbg \
-  --enable-debug \
-  --with-openssl=/usr/local/opt/openssl \
-  --with-bz2=/usr/local/opt/bzip2 \
-  --with-iconv=/usr/local/opt/libiconv \
-  --with-icu-dir=/usr/local/opt/icu4c \
-  --with-tidy=/usr/local/opt/tidy-html5 \
-  --with-libzip=/usr/local/opt/libzip \
-  --with-libxml-dir=/usr/local/opt/libxml2 \
-  --with-zlib \
-  --with-zlib-dir=/usr/local/opt/zlib \
-  --with-libedit=/usr/local/opt/libedit"
+# for build PHP 8.0, 7.4, 7.3
+# export PATH="/usr/local/opt/openssl/bin:$PATH"
+# export PATH="/usr/local/opt/bzip2/bin:$PATH"
+# export PATH="/usr/local/opt/libiconv/bin:$PATH"
+# export PATH="/usr/local/opt/icu4c/bin:$PATH"
+# export PATH="/usr/local/opt/tidy-html5/bin:$PATH"
+# export PATH="/usr/local/opt/libzip/bin:$PATH"
+# export PATH="/usr/local/opt/libxml2/bin:$PATH"
+#
+# export PHP_RPATHS="/usr/local/opt/openssl/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/bzip2/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/libiconv/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/icu4c/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/tidy-html5/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/libzip/lib:$PHP_RPATHS"
+# export PHP_RPATHS="/usr/local/opt/libxml2/lib:$PHP_RPATHS"
+#
+# export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/bzip2/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/libiconv/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/icu4c/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/tidy-html5/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/libzip/lib/pkgconfig:$PKG_CONFIG_PATH"
+# export PKG_CONFIG_PATH="/usr/local/opt/libxml2/lib/pkgconfig:$PKG_CONFIG_PATH"
+#
+# export PHP_BUILD_CONFIGURE_OPTS="\
+#   --disable-fpm \
+#   --disable-phpdbg \
+#   --enable-debug \
+#   --with-openssl=/usr/local/opt/openssl \
+#   --with-bz2=/usr/local/opt/bzip2 \
+#   --with-iconv=/usr/local/opt/libiconv \
+#   --with-icu-dir=/usr/local/opt/icu4c \
+#   --with-tidy=/usr/local/opt/tidy-html5 \
+#   --with-libzip=/usr/local/opt/libzip \
+#   --with-libxml-dir=/usr/local/opt/libxml2 \
+#   --with-zlib \
+#   --with-zlib-dir=/usr/local/opt/zlib \
+#   --with-libedit=/usr/local/opt/libedit"
