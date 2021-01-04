@@ -1,6 +1,6 @@
 ---
 - name: Check brew list zsh
-  shell: brew list | grep zsh
+  shell: brew list --formula | grep zsh
   register: zsh_is_installed
   ignore_errors: True
   changed_when: False

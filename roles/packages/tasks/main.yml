@@ -43,7 +43,7 @@
 
 # npm
 - name: Check brew list node
-  shell: brew list | grep node
+  shell: brew list --formula | grep node
   register: node_is_installed
   ignore_errors: True
   changed_when: False

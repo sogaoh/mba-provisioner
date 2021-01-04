@@ -57,6 +57,7 @@ homebrew_packages:
   - { name: hugo }
   - { name: ffmpeg }
   - { name: yq }
+  - { name: tflint }
 homebrew_cask_packages:
   - { name: iterm2 }
 #  - { name: google-chrome }
