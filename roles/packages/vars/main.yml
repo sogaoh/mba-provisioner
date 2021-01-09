@@ -58,6 +58,7 @@ homebrew_packages:
   - { name: ffmpeg }
   - { name: yq }
   - { name: tflint }
+  - { name: hashicorp/tap/waypoint }
 homebrew_cask_packages:
   - { name: iterm2 }
 #  - { name: google-chrome }
@@ -78,6 +79,7 @@ homebrew_cask_packages:
 #  - { name: google-cloud-sdk }
   - { name: java11 }
   - { name: skitch }
+#  - { name: amazon-workspaces }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
