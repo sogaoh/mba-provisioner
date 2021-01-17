@@ -60,6 +60,7 @@ homebrew_packages:
   - { name: tflint }
   - { name: hashicorp/tap/waypoint }
   - { name: circleci }
+#  - { name: teamookla/tap/speedtest }
 homebrew_cask_packages:
   - { name: iterm2 }
 #  - { name: google-chrome }
@@ -81,6 +82,7 @@ homebrew_cask_packages:
   - { name: java11 }
   - { name: skitch }
 #  - { name: amazon-workspaces }
+#  - { name: microsoft-edge }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
