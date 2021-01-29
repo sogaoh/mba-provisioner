@@ -4,7 +4,7 @@ my PC (MacBook Air) provisioner
 ## Prerequisite
 - macOS Catalina ~  (zsh)
 
-- Allow full access to terminal.app
+- **Allow full access to terminal.app**
   - System Environment Settings -> Security & Privacy 
 
 - Install Homebrew 
