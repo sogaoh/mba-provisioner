@@ -19,25 +19,25 @@ export CLICOLOR=1
 # zsh-completion
 fpath=(path/to/zsh-completions/src $fpath)
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+## pyenv
+#export PYENV_ROOT="$HOME/.pyenv"
+#export PATH="$PYENV_ROOT/bin:$PATH"
+#if command -v pyenv 1>/dev/null 2>&1; then
+#  eval "$(pyenv init -)"
+#fi
 
-# goenv
-export GOENV_ROOT=$HOME/.goenv
-export PATH=$GOENV_ROOT/bin:$PATH
-export PATH=$HOME/.goenv/bin:$PATH
-if command -v goenv 1>/dev/null 2>&1; then
-  eval "$(goenv init -)"
-fi
+## goenv
+#export GOENV_ROOT=$HOME/.goenv
+#export PATH=$GOENV_ROOT/bin:$PATH
+#export PATH=$HOME/.goenv/bin:$PATH
+#if command -v goenv 1>/dev/null 2>&1; then
+#  eval "$(goenv init -)"
+#fi
 
 
 # gcloud
-export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
-export GOOGLE_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
+#export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
+#export GOOGLE_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
 
 # az(azure-cli)
 export ARM_SUBSCRIPTION_ID=$(security find-generic-password -s "azure subscription id" -w)
@@ -112,15 +112,16 @@ zle -N peco-docker-images
 bindkey '^x^i' peco-docker-images
 
 
-# direnv
-eval "$(direnv hook zsh)"
+## direnv
+#eval "$(direnv hook zsh)"
 
 # # rbenv -> replaced to anyenv
 # export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 # eval "$(rbenv init -)"
 
-# anyenv
-eval "$(anyenv init -)"
+## anyenv
+#eval "$(anyenv init -)"
+
 
 # for build PHP 8.0, 7.4, 7.3
 # export PATH="/usr/local/opt/openssl/bin:$PATH"
