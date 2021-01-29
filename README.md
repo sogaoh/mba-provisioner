@@ -28,6 +28,7 @@ my PC (MacBook Air) provisioner
 - Create `/etc/hosts` symbolic link 
   ```zsh
   sudo mv /private/etc/hosts /private/etc/hosts.org
+  touch ~/.config/hosts
   sudo ln -snf ~/.config/hosts /private/etc/hosts
   ``` 
 
