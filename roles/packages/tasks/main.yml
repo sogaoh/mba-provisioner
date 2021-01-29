@@ -23,18 +23,18 @@
     brew info {{ item | basename }} > brew_info/{{ item | basename }}
   with_items: "{{ brew_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
 
-## cask
-#- name: Install/Upgrade Homebrew Cask packages
-#  community.general.homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }} install_options=force
-#  with_items: "{{ homebrew_cask_packages }}"
-#  register: cask_result
-#
-#- name: Make directory for Brew Cask Info
-#  file: path=cask_info state=directory
-#
-#- name: Log Brew Cask Info
-#  shell: brew info {{ item }} --cask > cask_info/{{ item }}
-#  with_items: "{{ cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
+# cask
+- name: Install/Upgrade Homebrew Cask packages
+  community.general.homebrew_cask: name={{ item.name }} state={{ item.state|default('installed') }} install_options=force
+  with_items: "{{ homebrew_cask_packages }}"
+  register: cask_result
+
+- name: Make directory for Brew Cask Info
+  file: path=cask_info state=directory
+
+- name: Log Brew Cask Info
+  shell: brew info {{ item }} --cask > cask_info/{{ item }}
+  with_items: "{{ cask_result.results | selectattr('changed') | map(attribute='item') | map(attribute='name') | list }}"
 
 # gem
 - name: Install/Upgrade gem packages
@@ -55,13 +55,13 @@
 
 # pip
 - name: Checking whether pip command is installed
-  shell: type pip
+  shell: type pip3
   register: pip_is_installed
   ignore_errors: True
   changed_when: False
 
 - name: Install/Upgrade pip packages
-  pip: name={{ item.name }} state={{ item.state|default('latest') }}
+  pip: name={{ item.name }} executable=pip3 state={{ item.state|default('latest') }}
   with_items: "{{ pip_packages }}"
   when: pip_is_installed is not skipped and pip_is_installed.stdout != 'pip not found'
 

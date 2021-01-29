@@ -112,15 +112,15 @@ zle -N peco-docker-images
 bindkey '^x^i' peco-docker-images
 
 
-## direnv
-#eval "$(direnv hook zsh)"
+# direnv
+eval "$(direnv hook zsh)"
 
 # # rbenv -> replaced to anyenv
 # export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
 # eval "$(rbenv init -)"
 
-## anyenv
-#eval "$(anyenv init -)"
+# anyenv
+eval "$(anyenv init -)"
 
 
 # for build PHP 8.0, 7.4, 7.3
