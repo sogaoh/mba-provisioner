@@ -58,12 +58,14 @@ homebrew_packages:
   - { name: ffmpeg }
   - { name: yq }
   - { name: tflint }
+  - { name: tfsec }
   - { name: hashicorp/tap/waypoint }
   - { name: circleci }
 #  - { name: teamookla/tap/speedtest }
+  - { name: java11 }
 homebrew_cask_packages:
   - { name: iterm2 }
-#  - { name: google-chrome }
+  - { name: google-chrome }
   - { name: alfred }
   - { name: docker }
   - { name: firefox }
@@ -79,7 +81,7 @@ homebrew_cask_packages:
   - { name: bitwarden }
 #  - { name: adobe-acrobat-reader }
 #  - { name: google-cloud-sdk }
-  - { name: java11 }
+  #- { name: java11 }   # moved to brew
   - { name: skitch }
 #  - { name: amazon-workspaces }
 #  - { name: microsoft-edge }
