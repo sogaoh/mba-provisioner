@@ -38,6 +38,9 @@ fpath=(path/to/zsh-completions/src $fpath)
 # gcloud
 #export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
 #export GOOGLE_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
+source "$(brew --prefix)/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+
 
 # az(azure-cli)
 export ARM_SUBSCRIPTION_ID=$(security find-generic-password -s "azure subscription id" -w)
