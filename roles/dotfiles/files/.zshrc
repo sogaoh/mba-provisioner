@@ -1,9 +1,6 @@
 #
 # Executes commands at the start of an interactive session.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
 # Source Prezto.
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
@@ -19,20 +16,25 @@ export CLICOLOR=1
 # zsh-completion
 fpath=(path/to/zsh-completions/src $fpath)
 
-## pyenv
+
+## pyenv -> replaced to anyenv
 #export PYENV_ROOT="$HOME/.pyenv"
 #export PATH="$PYENV_ROOT/bin:$PATH"
 #if command -v pyenv 1>/dev/null 2>&1; then
 #  eval "$(pyenv init -)"
 #fi
 
-## goenv
+## goenv -> replaced to anyenv
 #export GOENV_ROOT=$HOME/.goenv
 #export PATH=$GOENV_ROOT/bin:$PATH
 #export PATH=$HOME/.goenv/bin:$PATH
 #if command -v goenv 1>/dev/null 2>&1; then
 #  eval "$(goenv init -)"
 #fi
+
+## rbenv -> replaced to anyenv
+#export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
+#eval "$(rbenv init -)"
 
 
 # gcloud
@@ -118,9 +120,6 @@ bindkey '^x^i' peco-docker-images
 # direnv
 eval "$(direnv hook zsh)"
 
-# # rbenv -> replaced to anyenv
-# export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
-# eval "$(rbenv init -)"
 
 # anyenv
 eval "$(anyenv init -)"
