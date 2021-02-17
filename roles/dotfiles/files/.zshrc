@@ -32,9 +32,12 @@ fpath=(path/to/zsh-completions/src $fpath)
 #  eval "$(goenv init -)"
 #fi
 
-## rbenv -> replaced to anyenv
+## rbenv (from anyenv)
 #export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
-#eval "$(rbenv init -)"
+export PATH="~/.anyenv/envs/rbenv/shims:/usr/local/bin:$PATH"
+if command -v rbenv 1>/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
 
 
 # gcloud
