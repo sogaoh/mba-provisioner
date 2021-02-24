@@ -86,6 +86,7 @@ homebrew_cask_packages:
   - { name: skitch }
   - { name: amazon-workspaces }
   - { name: microsoft-edge }
+  - { name: transmit }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
