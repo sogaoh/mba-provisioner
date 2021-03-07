@@ -24,13 +24,15 @@ fpath=(path/to/zsh-completions/src $fpath)
 #  eval "$(pyenv init -)"
 #fi
 
-## goenv -> replaced to anyenv
+## goenv (from anyenv)
 #export GOENV_ROOT=$HOME/.goenv
+export GOENV_ROOT=$HOME/.anyenv/envs/goenv
 #export PATH=$GOENV_ROOT/bin:$PATH
 #export PATH=$HOME/.goenv/bin:$PATH
-#if command -v goenv 1>/dev/null 2>&1; then
-#  eval "$(goenv init -)"
-#fi
+export PATH="~/.anyenv/envs/goenv/shims:$PATH"
+if command -v goenv 1>/dev/null 2>&1; then
+  eval "$(goenv init -)"
+fi
 
 ## rbenv (from anyenv)
 #export PATH="~/.rbenv/shims:/usr/local/bin:$PATH"
