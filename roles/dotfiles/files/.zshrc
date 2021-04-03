@@ -41,6 +41,12 @@ if command -v rbenv 1>/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
+## nodenv (from anyenv)
+export PATH="~/.anyenv/envs/nodenv/shims:/usr/local/bin:$PATH"
+if command -v nodenv 1>/dev/null 2>&1; then
+  eval "$(nodenv init -)"
+fi
+
 
 # gcloud
 export GOOGLE_APPLICATION_CREDENTIALS=$(security find-generic-password -s "gcloud auth path" -w)
@@ -122,18 +128,6 @@ zle -N peco-docker-images
 bindkey '^x^i' peco-docker-images
 
 
-# awsp
-function awsp() {
-  if [ $# -ge 1 ]; then
-    export AWS_PROFILE="$1"
-    echo "Set AWS_PROFILE=$AWS_PROFILE."
-  else
-    source _awsp
-  fi
-  export AWS_DEFAULT_PROFILE=$AWS_PROFILE
-}
-
-
 # direnv
 eval "$(direnv hook zsh)"
 
@@ -181,3 +175,15 @@ eval "$(anyenv init -)"
 #   --with-zlib \
 #   --with-zlib-dir=/usr/local/opt/zlib \
 #   --with-libedit=/usr/local/opt/libedit"
+
+
+# awsp
+function awsp() {
+  if [ $# -ge 1 ]; then
+    export AWS_PROFILE="$1"
+    echo "Set AWS_PROFILE=$AWS_PROFILE."
+  else
+    source _awsp
+  fi
+  export AWS_DEFAULT_PROFILE=$AWS_PROFILE
+}
