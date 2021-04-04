@@ -65,6 +65,8 @@ homebrew_packages:
   - { name: java11 }
   - { name: jsonnet }
   - { name: pv }
+  - { name: mas }
+  - { name: pandoc }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
