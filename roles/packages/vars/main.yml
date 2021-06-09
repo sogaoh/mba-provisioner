@@ -1,7 +1,7 @@
 homebrew_packages:
   - { name: ghq }
   - { name: peco }
-  - { name: vim, options: 'with-lua' }  
+  - { name: vim, options: 'with-lua' }
   - { name: zsh-completion }
   - { name: tmux }
   - { name: rsync }
@@ -13,12 +13,12 @@ homebrew_packages:
   - { name: tree }
   - { name: nkf }
   - { name: jq }
-  - { name: pigz }    
-  - { name: exa }    
-  - { name: bat }    
+  - { name: pigz }
+  - { name: exa }
+  - { name: bat }
   - { name: fd }
   - { name: sd }
-  - { name: ripgrep }    
+  - { name: ripgrep }
   - { name: procs }
   - { name: tokei }
   - { name: extrawurst/tap/gitui }
@@ -67,6 +67,7 @@ homebrew_packages:
   - { name: pv }
   - { name: mas }
   - { name: pandoc }
+  - { name: Songmu/tap/ecschedule }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
