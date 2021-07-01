@@ -68,6 +68,7 @@ homebrew_packages:
   - { name: mas }
   - { name: pandoc }
   - { name: Songmu/tap/ecschedule }
+  - { name: knqyf263/utern/utern }
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
