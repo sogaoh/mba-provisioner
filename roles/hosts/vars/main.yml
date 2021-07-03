@@ -2,3 +2,6 @@
 minio:
   content: |
     127.0.0.1       minio
+alw-03:
+  content: |
+    13.113.144.5       alw-03.ij

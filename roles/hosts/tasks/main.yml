@@ -8,4 +8,5 @@
     marker: ""
   with_items:
     - "{{ minio }}"
+    - "{{ alw-03 }}"
   changed_when: true

@@ -69,6 +69,8 @@ homebrew_packages:
   - { name: pandoc }
   - { name: Songmu/tap/ecschedule }
   - { name: knqyf263/utern/utern }
+  - { name: mkcert }    # for projector
+  - { name: nss }       # for projector
 homebrew_cask_packages:
   - { name: iterm2 }
   - { name: google-chrome }
