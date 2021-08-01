@@ -70,6 +70,7 @@ homebrew_packages:
   - { name: Songmu/tap/ecschedule }
   - { name: knqyf263/utern/utern }
   - { name: fujiwara/tap/lambroll }
+  - { name: aquasecurity/trivy/trivy }
   - { name: mkcert }    # for projector
   - { name: nss }       # for projector
 homebrew_cask_packages:
