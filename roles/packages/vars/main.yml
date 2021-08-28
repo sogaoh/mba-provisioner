@@ -73,6 +73,7 @@ homebrew_packages:
   - { name: aquasecurity/trivy/trivy }
   - { name: aws/tap/copilot-cli }
   - { name: mkr }       # after brew tap mackerelio/mackerel-agent
+  - { name: uzimaru0000/tap/tv }
   - { name: mkcert }    # for projector
   - { name: nss }       # for projector
 homebrew_cask_packages:
