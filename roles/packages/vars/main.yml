@@ -62,7 +62,7 @@ homebrew_packages:
   - { name: hashicorp/tap/waypoint }
   - { name: circleci }
 #  - { name: teamookla/tap/speedtest }
-  - { name: java11 }
+#  - { name: java11 }
   - { name: jsonnet }
   - { name: pv }
   - { name: mas }
@@ -98,6 +98,7 @@ homebrew_cask_packages:
   - { name: amazon-workspaces }
   - { name: microsoft-edge }
   - { name: transmit }
+  - { name: nosql-workbench }
 gem_packages:
   - { name: bundler }
   - { name: jekyll }
