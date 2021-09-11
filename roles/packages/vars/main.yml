@@ -112,3 +112,4 @@ npm_packages:
 pip_packages:
   - { name: fabric }
   - { name: ansible-lint }
+  - { name: boto3 }
