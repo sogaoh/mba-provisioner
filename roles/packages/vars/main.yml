@@ -39,7 +39,7 @@ homebrew_packages:
   - { name: yarn }
   - { name: graphviz }
   - { name: direnv }
-  - { name: anyenv }  # for PHP, Ruby, Python?, Go?
+  - { name: anyenv }  # for PHP, Ruby, Python, Go?
   - { name: certbot }
   - { name: composer }
   - { name: openssl }
